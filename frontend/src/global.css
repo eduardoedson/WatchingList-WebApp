@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 8px;
+  background-color: #1a1818;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #ce93d8;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #1a1818;
+}
+
+a:visited {
+  color: #ff4949;
+}
+
+.MuiTableHead-root > tr > th {
+  font-size: 1rem;
+  font-weight: bold !important;
+}
+
+.MuiDivider-root {
+  margin-top: 5rem !important;
+}
+
+.MuiChip-label {
+  font-size: 1.15rem;
+  color: #ce93d8;
+}
+
+.MuiTab-root {
+  font-size: 1.15rem !important;
+  font-weight: bold !important;
+}
+
+.App {
+  margin: 2rem;
+}
+
+.App-tab-content {
+  margin-top: 3rem;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.container-form > .form-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-form > .form-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
+.container-watching,
+.container-waiting,
+.container-completed {
+  margin: 1rem;
+}
+
+.container-tablecell-action {
+  display: flex !important;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
+.container-tablecell-action > svg {
+  cursor: pointer;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+}
+
+.up-btn {
+  display: none;
+  position: fixed !important;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+}

@@ -1,0 +1,24 @@
+@media (max-width: 600px) {
+  .MuiTab-root {
+    font-size: 0.65rem !important;
+  }
+
+  .MuiTableHead-root > tr > th {
+    font-size: 0.875rem !important;
+  }
+
+  .App-tab-content {
+    margin-top: 1.2rem;
+  }
+
+  .container-form > .form-btns,
+  .container-form > .form-inputs {
+    flex-direction: column;
+  }
+
+  .container-watching,
+  .container-waiting,
+  .container-completed {
+    margin: 0.225rem;
+  }
+}
