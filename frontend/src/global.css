@@ -16,87 +16,139 @@
 
 body {
   font-family: "Roboto";
-  background-color: #1a1818;
+  background-color: #363535;
 }
 
-a:visited {
-  color: #ff4949;
+button {
+  text-transform: capitalize !important;
 }
 
-.MuiTableHead-root > tr > th {
-  font-size: 1rem;
-  font-weight: bold !important;
+.Main-Content-Container {
+  margin: 4rem 1rem;
 }
 
-.MuiDivider-root {
-  margin-top: 5rem !important;
+.Form-Container {
+  padding: 1rem;
 }
 
-.MuiChip-label {
-  font-size: 1.15rem;
-  color: #ce93d8;
+.Form-Container-Inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
 }
 
-.MuiTab-root {
-  font-size: 1.15rem !important;
-  font-weight: bold !important;
+.Form-Container-Btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
-.App {
-  margin: 2rem;
-}
-
-.App-tab-content {
-  margin-top: 3rem;
-}
-
-.container-form {
+.Tables-Container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 3rem;
 }
 
-.container-form > .form-inputs {
+.Cards-Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 1450px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.Card-Container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   gap: 1rem;
-}
-
-.container-form > .form-btns {
-  display: flex;
-  flex-direction: row;
-  gap: 0.8rem;
-}
-
-.container-watching,
-.container-waiting,
-.container-completed {
+  padding: 1rem;
+  border-radius: 0.25rem;
   margin: 1rem;
+  width: 450px;
 }
 
-.container-tablecell-action {
-  display: flex !important;
+.Card-Left-Container > img {
+  height: 170px;
+  width: auto;
+  border-radius: 0.25rem;
+}
+
+.Card-Right-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Card-Title {
+  font-size: 1.45rem;
+}
+
+.Card-Title > a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.Card-Type {
+  width: 100%;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Card-Desc {
+  font-size: 1.3rem;
+}
+
+.Status-Label {
+  font-weight: bold;
+  color: black !important;
+}
+
+.Card-Btns-Container {
+  width: 100%;
+  display: flex;
   flex-direction: row;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
-.container-tablecell-action > svg {
+.Card-Btns-Container > svg {
   cursor: pointer;
 }
 
-.loading-container {
-  display: flex;
-  justify-content: center;
+.Form-Container-Inputs #id {
+  width: 35px;
+}
+
+.Form-Container-Inputs #season,
+.Form-Container-Inputs #current {
+  width: 75px;
+}
+
+.Form-Alert {
+  width: 400px;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 .up-btn {
   display: none;
   position: fixed !important;
-  bottom: 10px;
-  right: 10px;
+  bottom: 80px;
+  right: 40px;
   z-index: 99;
+}
+
+.Loading-Container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  padding-bottom: 10rem;
 }
