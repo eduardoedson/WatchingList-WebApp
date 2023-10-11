@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const Backend = axios.create({ baseURL: "https://list-api.eduardoalves.tech" });
+const Backend = axios.create({ baseURL: "localhost:4000" });
 
 const getWatching = async (category) => {
   return await Backend.get(`/get/${category}/false/false`).then(
