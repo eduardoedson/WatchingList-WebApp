@@ -29,6 +29,7 @@ export default class UpdateItemValidator {
     current: schema.number.optional(),
     season: schema.number.optional(),
     link: schema.string.optional([rules.url()]),
+    imgLink: schema.string.optional([rules.url()]),
     waiting: schema.boolean.optional(),
     completed: schema.boolean.optional(),
   })

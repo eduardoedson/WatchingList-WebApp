@@ -21,6 +21,9 @@ export default class Item extends BaseModel {
   public link: string
 
   @column()
+  public imgLink: string
+
+  @column()
   public waiting: boolean
 
   @column()
