@@ -15,6 +15,7 @@ import { useForm, useFormDispatch } from "../context/FormContext";
 import { useLoading, useLoadingDispatch } from "../context/LoadingContext";
 import { useRowsDispatch } from "../context/RowContext";
 import { storeItem, updateItem } from "../services/backend";
+import { backToItem } from "../services/globals";
 
 export default function Form({ category }) {
   const context = useForm();
@@ -124,12 +125,21 @@ export default function Form({ category }) {
           state: rows,
           type: "UPDATE",
         });
-        formDispatch({ type: "RESET" });
       }
     }
 
     loadingDispatch({ type: "STOP" });
   };
+
+  useEffect(() => {
+    if (!loading) {
+      if (id) {
+        backToItem(id);
+      }
+      formDispatch({ type: "RESET" });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loading]);
 
   useEffect(() => {
     const status = {

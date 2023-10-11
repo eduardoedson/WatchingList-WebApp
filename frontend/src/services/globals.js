@@ -19,3 +19,8 @@ export const formatDate = (date) => {
 
 export const backToTop = () =>
   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
+export const backToItem = (id) =>
+  document
+    .getElementById(id)
+    .scrollIntoView({ block: "center", behavior: "smooth" });

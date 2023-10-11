@@ -15,7 +15,7 @@ export default function CardFunc({ row }) {
   };
 
   return (
-    <Paper elevation={12} className="Card-Container">
+    <Paper elevation={12} className="Card-Container" id={row.id}>
       <Box className="Card-Left-Container">
         <img src={row.img_link} alt={"Thumbnail " + row.name} loading="lazy" />
       </Box>

@@ -21,6 +21,8 @@ export default function Buttons({ row }) {
 
   const editBtn = async (id, body) => {
     loadingDispatch({ type: "START" });
+    formDispatch({ state: { id }, type: "UPDATE" });
+
     const rows = await updateItem(id, { ...body, category: row.category });
     rowsDispatch({
       state: rows,
